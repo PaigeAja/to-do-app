@@ -1,9 +1,9 @@
 function onReady() {
   const toDos = [];
-  const addToDoForm = document.getElementByID('addToDoForm');
+  const addToDoForm = document.getElementById('addToDoForm');
 
   function createNewToDo() {
-    const newToDoText = document.getElementByID('newToDoText');
+    const newToDoText = document.getElementById('newToDoText');
     if (!newToDoText.value) { return; }
     toDos.push({
       title: newToDoText.value,
@@ -15,7 +15,7 @@ function onReady() {
   }
 
   function renderTheUI() {
-    const toDoList = document.getElementByID('toDoList');
+    const toDoList = document.getElementById('toDoList');
 
     toDoList.textContent = '';
 
